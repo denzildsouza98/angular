@@ -1,0 +1,20 @@
+<div align="center"> 
+    <h3>Select the question number and answer number using the navigation bars provided</h3>
+    <table border="2px">
+        <tr>
+            <td>Enter the question number:<input type="number" min="1" max="10" step="1" [(ngModel)]="answer.id"></td>
+        </tr>
+        <tr>
+            <td>Enter  the    answer number:<input type="number" min="1" max="4" step="1"  [(ngModel)]="answer.answer"></td>
+        </tr>
+        <tr>
+            <td align="center"><button class="btn btn-success" (click)="addAnswer()">Add/Update answer</button></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <h4>Your Answers</h4>
+  <ul *ngFor="let a of answers">
+    <li><b>Quenstion {{a.id}}</b> Answer:{{a.answer}}</li>
+  </ul>
+</div>

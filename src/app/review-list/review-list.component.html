@@ -1,0 +1,20 @@
+<div>
+  <p>Your Answers</p>
+  <ul *ngFor="let a of answer">
+    <li><b>Quenstion {{a.id}}</b> Answer:{{a.answer}}</li>
+  </ul>
+</div>
+<div>
+    <h3 style="color: red;">Questions and their Correct answers</h3>
+    <ol *ngFor="let q of quiz">
+        <h3>{{q.question}}</h3>
+        <li>{{q.answer1}}</li>
+        <li>{{q.answer2}}</li>
+        <li>{{q.answer3}}</li>
+        <li>{{q.answer4}}</li>
+        <p style="color:green;"><b>Correct Answer:{{q.correct_answer}}</b></p>
+      </ol>  
+    </div>
+    <div>
+     Click here to go back to home:<a routerLink="/home">Home</a>
+    </div>

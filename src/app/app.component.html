@@ -1,0 +1,29 @@
+<div align="center" class="jumbotron">
+  <h2><i>Welcome to {{title}} Angular project</i></h2>
+</div>
+<br />
+<br />
+<div>
+<ul>
+  <li>
+    <a class="w3-bar-item w3-button btn btn-outline-success btn-lg" routerLink="/home">Home</a>
+  </li>
+  <li>
+    <a class="w3-bar-item w3-button btn btn-outline-success btn-lg" routerLink="/getAllQuiz">Get Questions</a>
+  </li>
+  <li>
+    <a class="w3-bar-item w3-button btn btn-outline-success btn-lg" routerLink="/addAnswer">Submit Answers</a>
+  </li>
+  <!-- <li>
+    <a class="w3-bar-item w3-button btn btn-outline-danger btn-lg" routerLink="/getAllReview">Review Answers</a>
+  </li> -->
+  <li>
+    <a class="w3-bar-item w3-button btn btn-outline-danger btn-lg" routerLink="/getAllResult">Get Result</a>
+  </li>
+</ul>
+</div>
+<br/>
+<br/>
+<div >
+<router-outlet></router-outlet>
+</div>
